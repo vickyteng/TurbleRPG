@@ -1,0 +1,33 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'bathroom_mesh_0006.obj'
+
+# Vertices (Count = 8)
+v -112 -32 0
+v -128 -32 0
+v -128 -16 0
+v -112 -16 0
+v -96 -32 0
+v -112 -32 0
+v -112 -16 0
+v -96 -16 0
+
+# Texture cooridinates (Count = 8)
+vt 0.4214876 0.743346
+vt 0.4380165 0.743346
+vt 0.4380165 0.7737643
+vt 0.4214876 0.7737643
+vt 0.5444215 0.6463878
+vt 0.5609504 0.6463878
+vt 0.5609504 0.6768061
+vt 0.5444215 0.6768061
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g bathroom_mesh_0006
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/5/1 6/6/1 7/7/1 8/8/1
+
