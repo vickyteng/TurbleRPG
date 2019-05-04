@@ -8,11 +8,21 @@ public class CameraController : MonoBehaviour
     public GameObject followTarget;
     private Vector3 targetPos;
     public float moveSpeed = 1;
+    private static bool cameraExists;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // prevents duplicates of player
+        if (!cameraExists)
+        {
+            cameraExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
