@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{A19CADEF-AE41-38E5-B14A-B6D2931CFFB9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerStartPoint.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraController.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="17" Column="9" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="15" Column="6" />
-      <File FileName="Assets/Scripts/LoadNewArea.cs" Line="28" Column="32" />
-      <File FileName="Assets/Scripts/PlayerStartPoint.cs" Line="95" Column="27" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="28" Column="33" />
+      <File FileName="Assets/Scripts/Interaction.cs" Line="36" Column="17" />
+      <File FileName="Assets/Scripts/DialogueManager.cs" Line="16" Column="32" />
+      <File FileName="Assets/Scripts/PlayerHealthManager.cs" Line="14" Column="17" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="28" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
