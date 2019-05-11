@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
 
     public int currentLine = 0;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,10 @@ public class DialogueManager : MonoBehaviour
             currentLine = 0;
         }
 
-        dText.text = dialogLines[currentLine];
+        if (dialogLines.Length > 0)
+        {
+            dText.text = dialogLines[currentLine];
+        }
     }
 
     public void ShowDialogue()

@@ -10,9 +10,15 @@ public class PlayerHealthManager : MonoBehaviour
 
     public Text healthText;
 
+    float currTime;
+    int lastDidSomething;
+    int currSeconds;
+
     // Start is called before the first frame update
     void Start()
     {
+        currTime = Time.deltaTime;
+        //lastDidSomething = Time.deltaTime;
         playerCurrHealth = (playerMaxHealth * 3) / 4;
     }
 
@@ -26,19 +32,39 @@ public class PlayerHealthManager : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        currTime += Time.deltaTime;
+        currSeconds = (int)currTime % 60;
+
+        // If idle for more than 5 seconds, decrease health by 1
+        if (lastDidSomething + 5 < currSeconds)
+        {
+            playerCurrHealth -= 1;
+            lastDidSomething = currSeconds;
+        }
     }
 
     public void HurtPlayer(int damage)
     {
         playerCurrHealth -= damage;
         healthText.text = $"{playerCurrHealth}/100";
+
+        currSeconds = (int)currTime % 60;
+        lastDidSomething = currSeconds;
     }
 
     public void HealPlayer(int heal)
     {
-        if (playerCurrHealth + heal <= 100) {
+        if (playerCurrHealth + heal >= 100) {
+            playerCurrHealth = 100;
+        }
+        else
+        {
             playerCurrHealth += heal;
         }
         healthText.text = $"{playerCurrHealth}/100";
+
+        currSeconds = (int)currTime % 60;
+        lastDidSomething = currSeconds;
     }
 }

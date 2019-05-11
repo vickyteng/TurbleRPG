@@ -272,7 +272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positiveInteraction: 1
   impact: 10
-  dialogue: ABC has a lot of nice books. You wish you could read some more.
   dialogueLines:
   - ABC has a lot of nice books. You wish you could read some more.
   - "Maybe you\u2019ll pick up a book!"
@@ -398,8 +397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positiveInteraction: 1
   impact: 5
-  dialogue: "You look into ABC\u2019s mirror. You look decent today. Good enough."
-  dialogueLines: []
+  dialogueLines:
+  - "You look into ABC\u2019s mirror. You look decent today. Good enough."
 --- !u!61 &749898442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -472,8 +471,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positiveInteraction: 0
   impact: 20
-  dialogue: "You look at your friend\u2019s desk."
-  dialogueLines: []
+  dialogueLines:
+  - "You look at your friend\u2019s desk."
+  - 'ABC walks over '
+  - "\u201CYo what the heck! Please don\u2019t look at my stuff like that. It\u2019s
+    private.\u201D"
+  - After ABC talks to you, you feel pretty bad.
 --- !u!61 &862777407
 BoxCollider2D:
   m_ObjectHideFlags: 0

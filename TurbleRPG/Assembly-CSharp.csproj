@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Canvas.cs" />
+    <Compile Include="Assets\Scripts\Depression.cs" />
+    <Compile Include="Assets\Scripts\DepressionManager.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Interaction.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
