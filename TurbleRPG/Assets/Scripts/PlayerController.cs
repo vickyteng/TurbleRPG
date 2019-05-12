@@ -8,7 +8,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     PlayerHealthManager healthManager;
 
-    private static bool playerExists; 
+    private static bool playerExists;
+
+
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
         healthManager = FindObjectOfType<PlayerHealthManager>();
 
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         // prevents duplicates of player
         if (!playerExists)
@@ -63,8 +67,9 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0f);
         }
 
-
+        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         //gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(1);
-        
+
     }
 }
