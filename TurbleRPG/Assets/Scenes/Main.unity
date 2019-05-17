@@ -4176,7 +4176,7 @@ MonoBehaviour:
   positiveInteraction: 1
   impact: 20
   dialogueLines:
-  - You open your journal and write some positive goals for today. You are determined!
+  - You open your journal and write down your thoughts to help clear your mind.
 --- !u!61 &1577375159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5104,10 +5104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positiveInteraction: 1
-  impact: 20
+  impact: 15
   dialogueLines:
-  - You decide to pick some clothes and find a decent outfit. You feel a bit more
-    ready for the day.
+  - "You decide to pick some clothes to wear that aren\u2019t sweatpants or hoodies.
+    You feel a bit more ready for the day."
 --- !u!61 &1811596514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5969,10 +5969,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positiveInteraction: 0
-  impact: 30
+  impact: 20
   dialogueLines:
-  - You try to climb into bed to go to sleep again. You wake up and realize you missed
-    an important appointment. Now, you feel a little worthless.
+  - You try to climb into bed to go to sleep again. You wake up and realize everything
+    is the same and that life still has no meaning, but you continue on with your
+    day.
 --- !u!61 &1973279583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6202,10 +6203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positiveInteraction: 0
-  impact: 10
+  impact: 30
   dialogueLines:
   - "You play the piano. Your next door neighbor bangs the wall and complains that
     you\u2019re being noisy."
+  - You feel like a burden and want to go to bed.
 --- !u!61 &2086250652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6326,7 +6328,7 @@ PrefabInstance:
     - target: {fileID: 911694130080289649, guid: 6f1a42497b0594198bacc8beca551e0e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 911694130080289645, guid: 6f1a42497b0594198bacc8beca551e0e,
         type: 3}

@@ -234,6 +234,7 @@ MonoBehaviour:
   impact: 10
   dialogueLines:
   - You brush your teeth and wash your face. You feel cleaner.
+  - "\"At least I don\u2019t have morning breath anymore.\""
 --- !u!61 &426854870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -597,7 +598,8 @@ MonoBehaviour:
   positiveInteraction: 1
   impact: 20
   dialogueLines:
-  - You take a shower. You use lavender scented shampoo. You feel and smell good.
+  - You take a shower. You use lavender scented shampoo and body wash. You feel refreshed
+    and smell like flowers.
 --- !u!61 &2088731512
 BoxCollider2D:
   m_ObjectHideFlags: 0
