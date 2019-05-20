@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DepressionManager : MonoBehaviour
 {
@@ -44,5 +45,16 @@ public class DepressionManager : MonoBehaviour
         {
             diesText.text = "Unfortunately, Lance did not want to live another day. Press R to restart Game";
         }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene("Main");
+            diesText.text = "";
+        }
+    }
+
+    void ()
+    {
+
     }
 }
