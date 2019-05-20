@@ -87,7 +87,7 @@ public class PlayerStartPoint : MonoBehaviour
                     cam.transform.position = new Vector3(transform.position.x, transform.position.y, cam.transform.position.z);
 
                     break;
-                case "Class":
+                case "Classroom":
                     to = startFromClass.transform;
 
                     player.transform.position = to.position;

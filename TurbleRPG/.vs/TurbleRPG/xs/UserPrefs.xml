@@ -4,7 +4,9 @@
       <File FileName="Assets/Scripts/PlayerController.cs" Line="64" Column="62" />
       <File FileName="Assets/Scripts/Interaction.cs" Line="23" Column="6" />
       <File FileName="Assets/Scripts/DialogueManager.cs" Line="50" Column="6" />
-      <File FileName="Assets/Scripts/DepressionManager.cs" Line="68" Column="46" />
+      <File FileName="Assets/Scripts/DepressionManager.cs" Line="70" Column="74" />
+      <File FileName="Assets/Scripts/LoadNewArea.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerStartPoint.cs" Line="87" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

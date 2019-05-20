@@ -57,7 +57,7 @@ public class DepressionManager : MonoBehaviour
 
     void RestartGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         diesText.text = "";
         healthManager.playerCurrHealth = 75;
 
@@ -66,6 +66,8 @@ public class DepressionManager : MonoBehaviour
         shadow.color = c;
 
         dManager.dialogLines = new string[0];
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         PlayerPrefs.SetString("LastScene", "");
         PlayerPrefs.Save();
