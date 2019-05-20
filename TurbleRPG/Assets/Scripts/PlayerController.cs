@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour
     PlayerHealthManager healthManager;
 
     private static bool playerExists;
-
-
     private Animator anim;
 
     // Start is called before the first frame update
@@ -39,9 +37,6 @@ public class PlayerController : MonoBehaviour
         // If player moves left or right from input, translate in X axis
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
-            //transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal")
-            // * moveSpeed * Time.deltaTime, 0.0f));
-
             // This prevents bouncing off objects
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
         }
@@ -49,8 +44,6 @@ public class PlayerController : MonoBehaviour
         // If player moves up/down from input, translate in Y axis
         if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
-            //transform.Translate(new Vector3(0.0f, Input.GetAxisRaw("Vertical")
-            //  * moveSpeed * Time.deltaTime));
 
             // This prevents bouncing off objects
             rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * moveSpeed);
@@ -69,7 +62,6 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
-        //gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(1);
 
     }
 }

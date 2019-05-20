@@ -18,7 +18,6 @@ public class PlayerHealthManager : MonoBehaviour
     void Start()
     {
         currTime = Time.deltaTime;
-        //lastDidSomething = Time.deltaTime;
         playerCurrHealth = (playerMaxHealth * 3) / 4;
     }
 
@@ -30,7 +29,7 @@ public class PlayerHealthManager : MonoBehaviour
         // Make gameobject canvas show up that player died, press r to restart
         if (playerCurrHealth <= 0)
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
 
         currTime += Time.deltaTime;
@@ -42,6 +41,7 @@ public class PlayerHealthManager : MonoBehaviour
             playerCurrHealth -= 1;
             lastDidSomething = currSeconds;
         }
+
     }
 
     public void HurtPlayer(int damage)

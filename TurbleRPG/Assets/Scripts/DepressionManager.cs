@@ -11,12 +11,14 @@ public class DepressionManager : MonoBehaviour
 
     private float opacity;
     private PlayerHealthManager healthManager;
+    private DialogueManager dManager;
     private Color c;
 
     // Start is called before the first frame update
     void Start()
     {
         healthManager = FindObjectOfType<PlayerHealthManager>();
+        dManager = FindObjectOfType<DialogueManager>();
         opacity = 1 - ((float)healthManager.playerCurrHealth / 100f);
 
         c = Color.black;
@@ -49,12 +51,21 @@ public class DepressionManager : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
         {
             SceneManager.LoadScene("Main");
-            diesText.text = "";
+            RestartGame();
         }
     }
 
-    void ()
+    void RestartGame ()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        diesText.text = "";
+        healthManager.playerCurrHealth = 75;
+
+        opacity = 1 - ((float)healthManager.playerCurrHealth / 100f);
+        c.a = opacity;
+        shadow.color = c;
+        dManager.dialogIsActive = true;
+        dManager.dBox.SetActive(false);
 
     }
 }
