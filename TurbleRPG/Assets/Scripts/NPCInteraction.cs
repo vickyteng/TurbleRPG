@@ -10,39 +10,42 @@ public class NPCInteraction : MonoBehaviour
     public GameObject isLeft;
     public GameObject player;
     private bool state;
+    private Vector2 playerPos;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         state = false;
+        playerPos = player.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //print(transform.position.x);
+        print(playerPos);
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
 
-        print(transform.position.x);
-        print(player.transform.position.x);
+
 
         if (collision.gameObject.name == "turble_0" && Input.GetKeyUp(KeyCode.Space))
         {
+            player.transform.position = playerPos;
             state = true;
             //print("Here?");
-            if (transform.position.x > player.transform.position.x)
+            if (transform.position.x > playerPos.x)
             {
                 anim.SetBool("isLeft", state);
             }
-            if (transform.position.x < player.transform.position.x)
+            else if (transform.position.x < playerPos.x)
             {
                 anim.SetBool("isRight", state);
             }
-            if (transform.position.y < player.transform.position.y)
+            else if (transform.position.y < playerPos.y)
             {
                 anim.SetBool("isUp", state);
             }
