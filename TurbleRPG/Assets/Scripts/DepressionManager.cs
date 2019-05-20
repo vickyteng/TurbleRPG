@@ -64,8 +64,10 @@ public class DepressionManager : MonoBehaviour
         opacity = 1 - ((float)healthManager.playerCurrHealth / 100f);
         c.a = opacity;
         shadow.color = c;
-        dManager.dialogIsActive = true;
-        dManager.dBox.SetActive(false);
 
+        dManager.dialogLines = new string[0];
+
+        PlayerPrefs.SetString("LastScene", "");
+        PlayerPrefs.Save();
     }
 }

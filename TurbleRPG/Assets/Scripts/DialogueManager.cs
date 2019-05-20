@@ -50,5 +50,6 @@ public class DialogueManager : MonoBehaviour
     {
         dialogIsActive = true;
         dBox.SetActive(true);
+        print(dialogIsActive);
     }
 }
